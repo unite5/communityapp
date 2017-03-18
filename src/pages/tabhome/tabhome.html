@@ -1,0 +1,25 @@
+<!--
+  Generated template for the Tabhome page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>tabhome</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>
+-->
+<ion-tabs *ngIf="showTab" tabsPlacement="bottom" id="tabhomeIon" color="homeTab" tabsLayout="icon-left" selectedIndex="0">
+    <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="Posts" tabIcon="ios-paper-plane"></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="Family" tabIcon="ios-paper"></ion-tab>
+    <ion-tab [root]="tab4Root" tabTitle="Me" tabIcon="ios-person"></ion-tab>
+</ion-tabs>

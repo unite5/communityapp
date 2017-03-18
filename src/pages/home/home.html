@@ -1,0 +1,150 @@
+<ion-header>
+  <!--<ion-navbar>
+     <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+    <button ion-button side="right" style="float: right;">
+      <ion-icon name="home"></ion-icon>
+    </button>
+  </ion-navbar> -->
+<ion-navbar color="homeTab">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    
+
+    <ion-title id="homeNavbar" class="homeNavbar">
+      <button ion-button color="light" round small icon-right>Home <ion-icon name="home"></ion-icon></button>
+      <button ion-button color="light" (click)="seefamily()" round small outline icon-right>Family <ion-icon name="color-filter"></ion-icon></button>
+    </ion-title>
+
+    
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showHomePage()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <div  class="card-background-page">
+  <ion-card class="animated fadeIn">
+    <div class="divHandy"><ion-icon ios="ios-hand-outline" md="md-hand"></ion-icon></div>
+    <img src="assets/icon/favicon.ico"/>
+
+    <ion-card-content>
+      <ion-card-title  class="card-title">
+        Nine Inch Nails Live
+      </ion-card-title>
+      <p class="card-subtitle">
+        The most popular industrial group ever.
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+          <ion-col><p>Dec 23, 2016</p></ion-col>
+          <ion-col><p>1 Like, 23 Comments, 2 Shared</p></ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col>
+        <p>Short Description...</p>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='heart'></ion-icon>
+          Like
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon ios="ios-create" md="md-create"></ion-icon>
+          Comment
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+  <ion-card class="animated fadeIn">
+    <div class="divHandy"><ion-icon ios="ios-hand-outline" md="md-hand"></ion-icon></div>
+    <img src="assets/icon/favicon.ico"/>
+
+    <ion-card-content>
+      <ion-card-title  class="card-title">
+        Nine Inch Nails Live
+      </ion-card-title>
+      <p class="card-subtitle">
+        The most popular industrial group ever.
+      </p>
+    </ion-card-content>
+    <ion-row no-padding>
+          <ion-col><p>Dec 23, 2016</p></ion-col>
+          <ion-col><p>1 Like, 23 Comments, 2 Shared</p></ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col>
+        <p>Short Description...</p>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='heart'></ion-icon>
+          Like
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon ios="ios-create" md="md-create"></ion-icon>
+          Comment
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  </div>
+</ion-content>
+<!--
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <button ion-button clear full color="danger" icon-left>
+          <ion-icon ios="ios-book" md="md-book"></ion-icon>
+          Search
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear full color="danger" icon-left>
+          <ion-icon ios="ios-cloud" md="md-cloud"></ion-icon>
+          Share Post
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear full color="danger" icon-left>
+          <ion-icon ios="ios-chatbubbles" md="md-chatbubbles"></ion-icon>
+          Chat
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+</ion-footer>-->
