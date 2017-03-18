@@ -1,18 +1,23 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="homeTab">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Me</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showHomePage()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="myProfile" style="background-color: #009090;">
   <ion-grid>
     <ion-row>
       <ion-col width-50>
         <ion-avatar item-right>
-          <img src="assets/icon/favicon.ico" width="150" height="150">  
+          <img src="assets/icon/favicon.ico" width="150" height="150" (click)="changeImageToCall()">  
           <!-- class="myicon"-->
         </ion-avatar>  
       </ion-col>
@@ -22,4 +27,27 @@
         </ion-col>
     </ion-row> 
   </ion-grid>
+
+  <ion-list>
+
+    <ion-item style="background-color: #009090;">
+      <ion-label floating>Email</ion-label>
+      <ion-input  class="myProfile" style="background-color: #009090;" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #009090;">
+      <ion-label floating>Hobbies</ion-label>
+      <ion-input  class="myProfile" style="background-color: #009090;" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item style="background-color: #009090;">
+      <ion-label>Birth Date</ion-label>
+      <ion-datetime  class="myProfile" style="background-color: #009090;" displayFormat="MMM DD YYYY" pickerFormat="MMM DD YYYY" [(ngModel)]="timeStarts"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <div padding>
+      <button ion-button color="secondary" round>Update Profile</button>
+    </div>
+  </ion-list>
 </ion-content>
